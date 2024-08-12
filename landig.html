@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>landing</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="left"> 
+           <span class="logo-main"> Starbucks </span> 
+        </div>
+        <div class="right">
+            <a href="">home</a>
+            <a href="">contact</a>
+            <a href="">product</a>
+            <a href="">about Us</a>
+            <button id="signup">Sign Up</button>
+        </div>
+        <button id="ham" onclick="hambtn()">ham</button>
+        <hr>
+    </nav>
+
+    <section class="main">
+        <div class="left-sec">
+            <div class="heading">It's not just a coffee 
+             <div>   It's <span class="logo"> Starbucks </span></div>
+            </div>
+            <div class="btn">
+                <button id="order">Order now</button>
+                <button id="order">Know more</button>
+            </div>
+        </div>
+        <div class="right-sec">
+            <div class="image">
+                <img id="cup" src="main_coffee.jfif" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="one">
+            <img src="cold_coffee.jfif" alt="">
+            <div class="description">Cold coffee</div>
+        </div>
+        <div class="one">
+            <img src="hot coffee.jfif" alt="">
+            <div class="description">Hot coffee</div>
+        </div>
+        <div class="one">
+            <img src="pastry.jfif" alt="">
+            <div class="description">Pastry</div>
+        </div>
+        <div class="one">
+            <img src="breakfast.jfif" alt="">
+            <div class="description">Breakfast</div>
+        </div>
+    </section>
+    <footer>
+        <div class="footimg">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="pera">
+            copyright &copy;2024 ishan
+        </div>
+    </footer>
+    <script>
+        let ham = document.querySelector('.right')
+
+        function hambtn(){
+            ham.classList.toggle('.right')
+            // ham.classList.toggle('.right')
+            ham.style.display = 'flex'
+        }
+    </script>
+</body>
+</html>
+
